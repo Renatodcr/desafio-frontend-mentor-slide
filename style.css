@@ -182,6 +182,7 @@ body {
     width: 100%;
     height: 100%;
     background-size: 50px;
+    background-position-y: top;
     box-sizing: border-box;
   }
 
