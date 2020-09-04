@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+  width: 100%;
+  position: relative;
+}
+
+.section {
+  position: absolute;
+  background-image: url('images/pattern-curve.svg');
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.section.active {
+  display: flex;
+  animation: show .7s ease-in-out forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(30px, 0px, 0px);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+.info {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 190px;
+}
+
+.description {
+  position: relative;
+  z-index: 10;
+  width: 50%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('images/pattern-quotes.svg');
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: center;
+}
+
+.description>p {
+  width: 100%;
+  margin-left: 190px;
+  font-size: 32px;
+  color: hsl(240, 38%, 20%);
+  font-weight: 300;
+}
+
+.image {
+  background-image: url('images/pattern-bg.svg');
+  background-size: contain;
+  padding: 100px;
+  width: 50%;
+  position: relative;
+}
+
+.image>img {
+  width: 100%;
+}
+
+.button {
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px 25px 25px 25px;
+  padding: 10px;
+  background-color: #fff;
+  position: absolute;
+  left: 140px;
+  bottom: 85px;
+  box-shadow: 0px 8px 20px #bbb;
+  text-decoration: none;
+}
+
+.info>h2 {
+  color: hsl(240, 38%, 20%);
+  margin-right: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.info>p {
+  color: hsl(240, 18%, 77%);
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .section{
+    flex-direction: column;
+    padding: 20px;
+    background-size: 400px;
+  }
+
+  .image {
+    padding: 50px;
+    width: 100%;
+    order: -1;
+  }
+
+  .description {
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-size: 50px;
+  }
+
+  .description>p {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  .container {
+    height: 100%;
+  }
+  
+  .info {
+    margin-left: 0px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info>p {
+    font-size: 16px;
+    margin-bottom: 70px;
+  }
+
+  .info>h2 {
+    font-size: 16px;
+  }
+
+  .button {
+    bottom: 40px;
+    width: 20%;
+    padding: 5px;
+  }
+
+  .attribution {
+    display: none;
+  }
+}
+
