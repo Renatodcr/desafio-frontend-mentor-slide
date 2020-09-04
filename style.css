@@ -39,6 +39,7 @@ body {
   justify-content: center;
   align-items: center;
   display: none;
+  box-sizing: border-box;
 }
 
 .section.active {
@@ -63,6 +64,7 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   margin-left: 190px;
+  box-sizing: border-box;
 }
 
 .description {
@@ -77,6 +79,7 @@ body {
   background-repeat: no-repeat;
   background-position-y: top;
   background-position-x: center;
+  box-sizing: border-box;
 }
 
 .description>p {
@@ -93,6 +96,7 @@ body {
   padding: 100px;
   width: 50%;
   position: relative;
+  box-sizing: border-box;
 }
 
 .image>img {
@@ -125,11 +129,38 @@ body {
   color: hsl(240, 18%, 77%);
   font-size: 20px;
 }
+@media (max-width: 980px) {
+  .description {
+    background-size: 50px;
+  }
+
+  .description>p {
+    font-size: 20px;
+  }
+
+  .info>p {
+    font-size: 16px;
+    margin-bottom: 70px;
+  }
+
+  .info>h2 {
+    font-size: 16px;
+  }
+
+  .section{
+    background-size: 400px;
+  }
+  .button {
+    width: 20%;
+    padding: 5px;
+  }
+  
+}
+
 
 @media (max-width: 768px) {
   .section{
     flex-direction: column;
-    padding: 20px;
     background-size: 400px;
   }
 
@@ -137,14 +168,17 @@ body {
     padding: 50px;
     width: 100%;
     order: -1;
+    box-sizing: border-box;
   }
 
   .description {
     margin-top: 20px;
-    padding: 20px;
+    padding: 40px;
+    padding-bottom: 0px;
     width: 100%;
     height: 100%;
     background-size: 50px;
+    box-sizing: border-box;
   }
 
   .description>p {
