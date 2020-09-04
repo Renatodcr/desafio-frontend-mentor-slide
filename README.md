@@ -1,3 +1,5 @@
+Desafio Completado!!! Para visualizar acesse o site https://desafio-frontend-mentor-slide.netlify.app/
+
 # Frontend Mentor - Coding Bootcamp Testimonials Slider
 
 ![Design preview for the Coding Bootcamp Testimonials Slider coding challenge](./design/desktop-preview.jpg)
