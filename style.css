@@ -8,7 +8,8 @@
 html, body {
   font-family: 'Inter', sans-serif;
   height: 100%;
-  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 body {
@@ -23,7 +24,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   margin: auto;
   width: 100%;
   position: relative;
@@ -130,30 +130,51 @@ body {
   color: hsl(240, 18%, 77%);
   font-size: 20px;
 }
-@media (max-width: 980px) {
+@media (max-width: 1024px) {
+  .image {
+    padding: 80px;
+  }
+  .description>p {
+    font-size: 18px;
+  }
+
+  .info>p {
+    font-size: 15px;
+  }
+
+  .info>h2 {
+    font-size: 15px;
+  }
+
+  .description {
+    background-size: 70px;
+  }
+
+  .button {
+    bottom: 65px;
+    width: 20%;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 800px) {
+  .image {
+    padding: 60px;
+  }
 
   .description {
     background-size: 50px;
   }
 
   .description>p {
-    font-size: 20px;
     margin-left: 100px;
-  }
-
-  .info>p {
-    font-size: 16px;
-  }
-
-  .info>h2 {
-    font-size: 16px;
   }
 
   .section{
     background-size: 400px;
-    width: 100vw;
   }
   .button {
+    bottom: 50px;
     width: 20%;
     padding: 5px;
   }
@@ -180,6 +201,7 @@ body {
   }
 
   .image {
+    margin-top: 30px;
     padding: 50px;
     width: 100%;
     order: -1;
@@ -223,9 +245,14 @@ body {
   }
 
   .attribution {
-    display: none;
+    margin-top: 50px;
+    padding-top: 40px;
   }
   @media (max-height: 670px) {
+
+    .attribution {
+      margin-top: 90px;
+    }
     .info>p {
       font-size: 12px;
     }
