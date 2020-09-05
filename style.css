@@ -7,7 +7,7 @@
 
 html, body {
   font-family: 'Inter', sans-serif;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -131,6 +131,7 @@ body {
   font-size: 20px;
 }
 @media (max-width: 980px) {
+
   .description {
     background-size: 50px;
   }
@@ -151,7 +152,6 @@ body {
   .section{
     background-size: 400px;
     width: 100vw;
-    height: 100vh;
   }
   .button {
     width: 20%;
@@ -166,10 +166,17 @@ body {
 
 
 @media (max-width: 768px) {
+  body {
+    background-image: url('images/pattern-curve.svg');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 300px;
+  }
+
   .section{
     flex-direction: column;
     align-items: center;
-    background-size: 300px;
+    background-image: none;
   }
 
   .image {
@@ -217,6 +224,19 @@ body {
 
   .attribution {
     display: none;
+  }
+}
+
+@media (max-height: 670px) {
+  .info>p {
+    font-size: 12px;
+  }
+
+  .info>h2 {
+    font-size: 12px;
+  }
+  .description>p {
+    font-size: 14px;
   }
 }
 
