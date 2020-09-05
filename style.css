@@ -225,18 +225,19 @@ body {
   .attribution {
     display: none;
   }
+  @media (max-height: 670px) {
+    .info>p {
+      font-size: 12px;
+    }
+  
+    .info>h2 {
+      font-size: 12px;
+    }
+    .description>p {
+      font-size: 14px;
+    }
+  }
 }
 
-@media (max-height: 670px) {
-  .info>p {
-    font-size: 12px;
-  }
 
-  .info>h2 {
-    font-size: 12px;
-  }
-  .description>p {
-    font-size: 14px;
-  }
-}
 
