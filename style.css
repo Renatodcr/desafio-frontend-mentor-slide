@@ -40,9 +40,11 @@ body {
   align-items: center;
   display: none;
   box-sizing: border-box;
+  
 }
 
 .section.active {
+  overflow: hidden;
   display: flex;
   animation: show .7s ease-in-out forwards;
 }
