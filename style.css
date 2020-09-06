@@ -245,15 +245,8 @@ body {
     bottom: 40px;
   }
 
-  .attribution {
-    margin-top: 50px;
-    padding-top: 40px;
-  }
   @media (max-height: 670px) {
 
-    .attribution {
-      margin-top: 90px;
-    }
     .info>p {
       font-size: 12px;
     }
